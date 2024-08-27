@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Building Dreams</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/f4d12110de.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-
     <script>
         tailwind.config = {
             theme: {
@@ -38,7 +36,6 @@
             }
         }
     </script>
-
     <style>
         .manrope-font {
             font-family: "Manrope", sans-serif;
@@ -46,11 +43,12 @@
     </style>
 </head>
 
-<body>
-    <header>
-        <!-- Navbar Section Starts-->
-        <nav class="navbar w-[93%] lg:w-5/6 pt-8 lg:pt-10 pb-8 lg:pb-10 mx-auto flex justify-between items-center">
+<body class="manrope-font">
 
+    <header class="bg-gradient-to-b from-header-gradient-one from-5% to-header-gradient-two">
+
+        <!-- Navbar Section Starts -->
+        <nav class="navbar w-[93%] lg:w-5/6 pt-8 lg:pt-10 pb-8 lg:pb-10 mx-auto flex justify-between items-center">
 
             <div class="navbar-start flex flex-row-reverse justify-between w-full lg:w-2/6">
                 <div
@@ -86,6 +84,7 @@
                     <span class="text-4xl lg:text-3xl text-main-title-color font-extrabold">Rinterio</span></a>
             </div>
 
+            <!-- Menu Items -->
             <div class="navbar-center w-[45%] hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
                     <li>
@@ -106,6 +105,7 @@
                 </ul>
             </div>
 
+            <!-- Icons and Button -->
             <div class="navbar-end w-2/5 hidden lg:flex justify-between">
                 <i
                     class="fa-solid fa-magnifying-glass text-gray-primary bg-white rounded-full border border-1 border-[#E9E9E9] p-3 cursor-pointer">
@@ -117,19 +117,37 @@
                         class="fa-solid fa-arrow-right-long bg-btn-primary rounded-full w-7 h-7 flex justify-center items-center text-base -rotate-45 text-white"></i>
                 </a>
             </div>
+        </nav>
+        <!-- Navbar Section ends -->
 
-            <!-- Navbar Section Ends -->
+        <!-- Banner Section Starts -->
+        <section class="w-[90%] mx-auto mb-12 lg:mb-20 lg:w-5/6">
+            <div class="w-3/4 lg:w-1/2 mx-auto">
+                <img class="mx-auto mb-3" src="images/banner.png" alt="">
+            </div>
+            <div class="text-center">
+                <h1 class="text-main-title-color text-3xl lg:text-6xl font-extrabold lg:leading-[70px] mb-4 lg:mb-6">A
+                    barn house of this
+                    design has a <br>striking appearance</h1>
+                <p class="text-gray-secondary font-medium w-full lg:w-4/5 mx-auto mb-7">The barn house captivates with
+                    its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+                <a
+                    class="btn w-full lg:w-fit lg:px-5 rounded-full border border-1 border-btn-color-full bg-btn-color-half text-btn-primary font-extrabold text-lg">View
+                    Details
+                    <i
+                        class="fa-solid fa-arrow-right-long rounded-full w-7 h-7 flex justify-center items-center text-base -rotate-45 bg-btn-color-full">
+                    </i>
+                </a>
+            </div>
+        </section>
+        <!-- Banner Section ends -->
+
     </header>
 
     <main>
 
-
     </main>
-
-    <footer>
-
-
-    </footer>
 </body>
 
 </html>
